@@ -1,0 +1,35 @@
+﻿@page "/news"
+
+@inherits AppComponentBase;
+
+<div class="page-container">
+    @*<AuthorizeView>*@
+            <EditForm Model="AddNews" OnValidSubmit="WrapHandled(Submit)">
+                <div>
+                    <BitTextField Label="@Localizer[nameof(AppStrings.Title)]"
+                                  @bind-Value="AddNews.Title"
+                                  Type="BitTextFieldType.Text"
+                                  Placeholder="@Localizer[nameof(AppStrings.AddNewsTitle)]" />
+                    <ValidationMessage For="@(() => AddNews.Title)" />
+                </div>
+                <div>
+                    <BitTextField Label="@Localizer[nameof(AppStrings.Description)]"
+                                  @bind-Value="AddNews.Description"
+                                  Type="BitTextFieldType.Text"
+                                  Placeholder="@Localizer[nameof(AppStrings.AddNewsDescription)]" />
+                    <ValidationMessage For="@(() => AddNews.Description)" />
+                </div>
+                <BitButton Class="form-submit-button" ButtonStyle="BitButtonStyle.Primary"
+                           Title="@Localizer[nameof(AppStrings.Add)]"
+                           AriaLabel="@Localizer[nameof(AppStrings.Add)]"
+                           ButtonType="BitButtonType.Submit"
+                           IsEnabled="(string.IsNullOrEmpty(AddNews.Title) is false) && (string.IsNullOrEmpty(AddNews.Description) is false)">
+                    @Localizer[nameof(AppStrings.AddNews)]
+                </BitButton>
+            </EditForm>
+    @*</AuthorizeView>*@
+    <div>
+        <NewsComponent></NewsComponent>
+    </div>
+</div>
+
