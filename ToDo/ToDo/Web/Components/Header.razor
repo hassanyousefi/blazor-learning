@@ -12,6 +12,7 @@
         <BitLink Class="header-item--privacy" Href="/privacy" Target="_self">@Localizer[nameof(AppStrings.Privacy)]</BitLink>
         @if (!IsUserAuthenticated)
         {
+            <BitActionButton Class="header-item" Href="/news" Target="_self">@Localizer[nameof(AppStrings.News)]</BitActionButton>
             <BitActionButton Class="header-item" IconName="BitIconName.AddFriend" Href="/sign-up" Target="_self">@Localizer[nameof(AppStrings.SignUp)]</BitActionButton>
             <BitActionButton Class="header-item" IconName="BitIconName.Signin" Href="/sign-in" Target="_self">@Localizer[nameof(AppStrings.SignIn)]</BitActionButton>
         }

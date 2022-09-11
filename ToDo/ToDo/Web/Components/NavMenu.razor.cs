@@ -64,6 +64,12 @@ public partial class NavMenu
                 },
                 IconName = BitIconName.SignOut,
                 Key = "SignOut"
+            },
+            new BitNavLinkItem
+            {
+                Name = Localizer[nameof(AppStrings.News)],
+                Url = "/news",
+                Key = "News"
             }
         };
 

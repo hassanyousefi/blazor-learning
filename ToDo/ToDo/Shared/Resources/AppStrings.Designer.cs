@@ -79,6 +79,33 @@ namespace ToDo.Shared.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add news.
+        /// </summary>
+        public static string AddNews {
+            get {
+                return ResourceManager.GetString("AddNews", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add news Description.
+        /// </summary>
+        public static string AddNewsDescription {
+            get {
+                return ResourceManager.GetString("AddNewsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add news Title.
+        /// </summary>
+        public static string AddNewsTitle {
+            get {
+                return ResourceManager.GetString("AddNewsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to All.
         /// </summary>
         public static string All {
@@ -346,6 +373,15 @@ namespace ToDo.Shared.Resources {
         public static string Date {
             get {
                 return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        public static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
             }
         }
         
@@ -796,6 +832,15 @@ namespace ToDo.Shared.Resources {
         public static string NewPassword {
             get {
                 return ResourceManager.GetString("NewPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to News.
+        /// </summary>
+        public static string News {
+            get {
+                return ResourceManager.GetString("News", resourceCulture);
             }
         }
         
@@ -1273,6 +1318,15 @@ namespace ToDo.Shared.Resources {
         public static string Submit {
             get {
                 return ResourceManager.GetString("Submit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Title.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
         
