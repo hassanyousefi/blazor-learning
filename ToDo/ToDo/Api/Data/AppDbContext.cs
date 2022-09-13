@@ -1,4 +1,5 @@
 ﻿using ToDo.Api.Models.Account;
+using ToDo.Api.Models.News;
 using ToDo.Api.Models.TodoItem;
 
 namespace ToDo.Api.Data;
@@ -44,7 +45,7 @@ public class AppDbContext : IdentityDbContext<User, Role, int>
     }
 
     public DbSet<TodoItem> TodoItems { get; set; }
-
+    public DbSet<NewsItem> NewsItems { get; set; }
     private void ConfigIdentityTables(ModelBuilder builder)
     {
         //Config Asp Identity table name
