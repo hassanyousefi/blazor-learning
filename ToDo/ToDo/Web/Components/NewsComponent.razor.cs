@@ -6,5 +6,13 @@ namespace ToDo.App.Components
     {
         [Parameter]
         public NewsDto newsModel { get; set; } = new();
+
+        [Parameter]
+        public EventCallback<int> OnRemove { get; set; }
+
+        public async Task OnRemoveButton()
+        {
+            await OnRemove.InvokeAsync(newsModel.Id);
+        }
     }
 }

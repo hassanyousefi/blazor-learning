@@ -29,9 +29,9 @@
         </EditForm>
     </AuthorizeView>
     <div class="list-of-news">
-        @foreach (var t in TestNews)
+        @foreach (var news in TestNews)
         {
-            <NewsComponent newsModel="@t"></NewsComponent>
+            <NewsComponent newsModel="@news" OnRemove="@RemoveNews"></NewsComponent>
         }
     </div>
 </div>
